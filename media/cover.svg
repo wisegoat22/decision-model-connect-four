@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="cover-title cover-desc">
+  <title id="cover-title">Four Decision Models Play Connect Four</title>
+  <desc id="cover-desc">What the move logs revealed. In a 60-game recorded tournament, Dev-0.4B won 26 of its 30 games and chose the centre column in 104 of its 105 model decisions. Participants: Dev, Von, Laya and Kev. The small chart shows Dev choosing column 1 once, column 4 104 times and all other columns zero times.</desc>
+  <style>
+    text { font-family: 'Avenir Next', 'Helvetica Neue', Arial, sans-serif; }
+    .bold { font-weight: 700; }
+    .medium { font-weight: 500; }
+  </style>
+  <rect width="1920" height="1080" fill="#F5F3ED"/>
+  <rect width="1920" height="12" fill="#D8DDD9"/>
+  <rect width="620" height="12" fill="#087F8C"/>
+
+  <text x="96" y="105" font-size="28" letter-spacing="2.4" fill="#087F8C" class="bold">THE RECORDED TOURNAMENT</text>
+  <rect x="1558" y="57" width="266" height="88" rx="44" fill="#D9ECEA"/>
+  <text x="1691" y="114" text-anchor="middle" font-size="39" fill="#087F8C" class="bold">60 games</text>
+
+  <text x="90" y="245" font-size="100" fill="#152B38" class="bold">Four Decision Models</text>
+  <text x="90" y="358" font-size="100" fill="#152B38" class="bold">Play Connect Four</text>
+  <text x="97" y="441" font-size="46" fill="#5B6A72" class="medium">What the move logs revealed</text>
+
+  <rect x="96" y="517" width="1268" height="408" rx="32" fill="#112C3B"/>
+  <text x="145" y="587" font-size="39" fill="#FFFFFF" class="bold">Dev-0.4B</text>
+  <text x="145" y="630" font-size="25" fill="#B8D5D7" class="medium">Observed in this tournament</text>
+  <line x1="646" y1="675" x2="646" y2="869" stroke="#35515D" stroke-width="2"/>
+
+  <text x="144" y="801" font-size="140" fill="#FFFFFF" class="bold">26/30</text>
+  <text x="149" y="859" font-size="37" fill="#A8DCD8" class="medium">wins</text>
+  <text x="696" y="801" font-size="126" fill="#FFFFFF" class="bold">104/105</text>
+  <text x="701" y="859" font-size="34" fill="#A8DCD8" class="medium">centre-column choices</text>
+
+  <text x="1433" y="569" font-size="26" fill="#152B38" class="bold">Dev’s column choices</text>
+  <text x="1612" y="626" text-anchor="middle" font-size="28" fill="#087F8C" class="bold">104</text>
+  <text x="1459" y="849" text-anchor="middle" font-size="23" fill="#5B6A72" class="medium">1</text>
+  <line x1="1434" y1="877" x2="1795" y2="877" stroke="#C4CECA" stroke-width="2"/>
+  <rect x="1441" y="874.635" width="36" height="2.365" fill="#5B6A72"/>
+  <rect x="1594" y="631" width="36" height="246" rx="8" fill="#087F8C"/>
+  <g font-size="24" text-anchor="middle" fill="#5B6A72" class="medium">
+    <text x="1459" y="916">1</text><text x="1510" y="916">2</text>
+    <text x="1561" y="916">3</text><text x="1612" y="916" fill="#087F8C" class="bold">4</text>
+    <text x="1663" y="916">5</text><text x="1714" y="916">6</text><text x="1765" y="916">7</text>
+  </g>
+
+  <line x1="96" y1="973" x2="1824" y2="973" stroke="#D8DDD9" stroke-width="2"/>
+  <text x="99" y="1030" font-size="31" fill="#152B38" class="medium">Dev · Von · Laya · Kev</text>
+  <text x="1824" y="1030" text-anchor="end" font-size="25" fill="#5B6A72" class="medium">30 games per model · recorded choices only</text>
+</svg>

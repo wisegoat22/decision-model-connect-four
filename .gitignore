@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv*/
+*-env/
+inference/vendor/
+inference/adapters/weights/
+inference/run-logs/
+runs/
+*.safetensors
+*.pt
+*.pth
+*.bin

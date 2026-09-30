@@ -1,0 +1,1050 @@
+{
+  "created_at_utc": "2026-09-29T04:23:30.760642+00:00",
+  "protocol_hash": "6db078738bd32e9dbb3ddca68a3017bc8784b4874661dc7006812e4539f57921",
+  "specification": {
+    "schema_version": "connect-four-round-robin-v1",
+    "game": "connect_four",
+    "models": [
+      {
+        "id": "dev",
+        "inference": "Native Predictor.answer; CPU float32; published temperature; argmax; no game training",
+        "name": "Dev-0.4B",
+        "runtime": {
+          "torch": "2.14.0",
+          "transformers": "4.57.6"
+        },
+        "source": "https://huggingface.co/mpnikhil/dev-0.4b/tree/78f7121608a2ca44dc598bba4d74e4070567fd50",
+        "source_commit": "2ce2563db938e9ec22ffe69e5fb8d4706f61ed1a",
+        "source_label": "mpnikhil/dev-0.4b",
+        "subtitle": "399M \u00b7 public checkpoint",
+        "weights_revision": "78f7121608a2ca44dc598bba4d74e4070567fd50"
+      },
+      {
+        "base_revision": "1001bb4d826a52d1f399e183466143f4da7b741b",
+        "id": "kev",
+        "inference": "Native MLXDecisionModel, bf16 base + float32 pointer head; merged adapter; published temperature; argmax; no game training",
+        "name": "Kev-4B",
+        "runtime": {
+          "mlx": "0.32.3",
+          "mlx_lm": "0.31.3",
+          "torch": "2.8.0",
+          "transformers": "5.17.0"
+        },
+        "source": "https://huggingface.co/jaredpalmer/kev-4b/tree/139fdd94f1b6a6ad80cc15e08fcb99cac885a101",
+        "source_commit": "fdfdfd2c7a98225715a9cc8f4d9e1ef29ebbe79c",
+        "source_label": "jaredpalmer/kev-4b",
+        "subtitle": "4B \u00b7 recommended checkpoint",
+        "weights_revision": "139fdd94f1b6a6ad80cc15e08fcb99cac885a101"
+      },
+      {
+        "id": "von",
+        "inference": "SDK 1.3.1 using 1.2 weights; chains disabled; independent-option attention; CPU; native calibrated argmax; no game training",
+        "name": "Von",
+        "runtime": {
+          "torch": "2.14.0",
+          "transformers": "5.17.0",
+          "von_sdk": "1.3.1"
+        },
+        "source": "https://huggingface.co/wfzyx/von/tree/43bbca0fb17f424539416ee8eb3de33cfc3dacf3",
+        "source_commit": "a867a49d56d147769f2180629f05ac86f5cc1b51",
+        "source_label": "wfzyx/von \u00b7 chains off",
+        "subtitle": "395M \u00b7 chains off",
+        "weights_revision": "43bbca0fb17f424539416ee8eb3de33cfc3dacf3"
+      },
+      {
+        "id": "laya",
+        "inference": "SDK 0.3.21; explicit English root checkpoint; fast=False, compile=False; CPU; native calibrated argmax; no game training",
+        "name": "Laya English",
+        "runtime": {
+          "laya": "0.3.21",
+          "torch": "2.14.0",
+          "transformers": "5.17.0"
+        },
+        "source": "https://huggingface.co/convaiinnovations/laya/tree/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+        "source_commit": "9d955671415fc19f069b9cc998928075c1f255ec",
+        "source_label": "convaiinnovations/laya",
+        "subtitle": "421M \u00b7 English checkpoint",
+        "weights_revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851"
+      }
+    ],
+    "openings": [
+      {
+        "columns": [],
+        "id": "empty"
+      },
+      {
+        "columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "id": "a"
+      },
+      {
+        "columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "id": "a-mirror"
+      },
+      {
+        "columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "id": "b"
+      },
+      {
+        "columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "id": "b-mirror"
+      }
+    ],
+    "schedule": [
+      {
+        "id": "pair-01-opening-00-leg-1",
+        "pair": [
+          "dev",
+          "kev"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "dev",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-01-opening-00-leg-2",
+        "pair": [
+          "dev",
+          "kev"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "kev",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-01-opening-01-leg-1",
+        "pair": [
+          "dev",
+          "kev"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "dev",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-01-opening-01-leg-2",
+        "pair": [
+          "dev",
+          "kev"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "kev",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-01-opening-02-leg-1",
+        "pair": [
+          "dev",
+          "kev"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "dev",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-01-opening-02-leg-2",
+        "pair": [
+          "dev",
+          "kev"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "kev",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-01-opening-03-leg-1",
+        "pair": [
+          "dev",
+          "kev"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "dev",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-01-opening-03-leg-2",
+        "pair": [
+          "dev",
+          "kev"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "kev",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-01-opening-04-leg-1",
+        "pair": [
+          "dev",
+          "kev"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "dev",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-01-opening-04-leg-2",
+        "pair": [
+          "dev",
+          "kev"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "kev",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-02-opening-00-leg-1",
+        "pair": [
+          "dev",
+          "von"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "dev",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-02-opening-00-leg-2",
+        "pair": [
+          "dev",
+          "von"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "von",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-02-opening-01-leg-1",
+        "pair": [
+          "dev",
+          "von"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "dev",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-02-opening-01-leg-2",
+        "pair": [
+          "dev",
+          "von"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "von",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-02-opening-02-leg-1",
+        "pair": [
+          "dev",
+          "von"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "dev",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-02-opening-02-leg-2",
+        "pair": [
+          "dev",
+          "von"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "von",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-02-opening-03-leg-1",
+        "pair": [
+          "dev",
+          "von"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "dev",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-02-opening-03-leg-2",
+        "pair": [
+          "dev",
+          "von"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "von",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-02-opening-04-leg-1",
+        "pair": [
+          "dev",
+          "von"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "dev",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-02-opening-04-leg-2",
+        "pair": [
+          "dev",
+          "von"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "von",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-03-opening-00-leg-1",
+        "pair": [
+          "dev",
+          "laya"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "dev",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-03-opening-00-leg-2",
+        "pair": [
+          "dev",
+          "laya"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "laya",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-03-opening-01-leg-1",
+        "pair": [
+          "dev",
+          "laya"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "dev",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-03-opening-01-leg-2",
+        "pair": [
+          "dev",
+          "laya"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "laya",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-03-opening-02-leg-1",
+        "pair": [
+          "dev",
+          "laya"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "dev",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-03-opening-02-leg-2",
+        "pair": [
+          "dev",
+          "laya"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "laya",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-03-opening-03-leg-1",
+        "pair": [
+          "dev",
+          "laya"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "dev",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-03-opening-03-leg-2",
+        "pair": [
+          "dev",
+          "laya"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "laya",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-03-opening-04-leg-1",
+        "pair": [
+          "dev",
+          "laya"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "dev",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-03-opening-04-leg-2",
+        "pair": [
+          "dev",
+          "laya"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "laya",
+        "second_player": "dev"
+      },
+      {
+        "id": "pair-04-opening-00-leg-1",
+        "pair": [
+          "kev",
+          "von"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "kev",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-04-opening-00-leg-2",
+        "pair": [
+          "kev",
+          "von"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "von",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-04-opening-01-leg-1",
+        "pair": [
+          "kev",
+          "von"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "kev",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-04-opening-01-leg-2",
+        "pair": [
+          "kev",
+          "von"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "von",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-04-opening-02-leg-1",
+        "pair": [
+          "kev",
+          "von"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "kev",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-04-opening-02-leg-2",
+        "pair": [
+          "kev",
+          "von"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "von",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-04-opening-03-leg-1",
+        "pair": [
+          "kev",
+          "von"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "kev",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-04-opening-03-leg-2",
+        "pair": [
+          "kev",
+          "von"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "von",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-04-opening-04-leg-1",
+        "pair": [
+          "kev",
+          "von"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "kev",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-04-opening-04-leg-2",
+        "pair": [
+          "kev",
+          "von"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "von",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-05-opening-00-leg-1",
+        "pair": [
+          "kev",
+          "laya"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "kev",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-05-opening-00-leg-2",
+        "pair": [
+          "kev",
+          "laya"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "laya",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-05-opening-01-leg-1",
+        "pair": [
+          "kev",
+          "laya"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "kev",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-05-opening-01-leg-2",
+        "pair": [
+          "kev",
+          "laya"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "laya",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-05-opening-02-leg-1",
+        "pair": [
+          "kev",
+          "laya"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "kev",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-05-opening-02-leg-2",
+        "pair": [
+          "kev",
+          "laya"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "laya",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-05-opening-03-leg-1",
+        "pair": [
+          "kev",
+          "laya"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "kev",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-05-opening-03-leg-2",
+        "pair": [
+          "kev",
+          "laya"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "laya",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-05-opening-04-leg-1",
+        "pair": [
+          "kev",
+          "laya"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "kev",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-05-opening-04-leg-2",
+        "pair": [
+          "kev",
+          "laya"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "laya",
+        "second_player": "kev"
+      },
+      {
+        "id": "pair-06-opening-00-leg-1",
+        "pair": [
+          "von",
+          "laya"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "von",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-06-opening-00-leg-2",
+        "pair": [
+          "von",
+          "laya"
+        ],
+        "opening_id": "empty",
+        "opening_columns": [],
+        "first_player": "laya",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-06-opening-01-leg-1",
+        "pair": [
+          "von",
+          "laya"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "von",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-06-opening-01-leg-2",
+        "pair": [
+          "von",
+          "laya"
+        ],
+        "opening_id": "a",
+        "opening_columns": [
+          4,
+          3,
+          5,
+          4
+        ],
+        "first_player": "laya",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-06-opening-02-leg-1",
+        "pair": [
+          "von",
+          "laya"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "von",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-06-opening-02-leg-2",
+        "pair": [
+          "von",
+          "laya"
+        ],
+        "opening_id": "a-mirror",
+        "opening_columns": [
+          4,
+          5,
+          3,
+          4
+        ],
+        "first_player": "laya",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-06-opening-03-leg-1",
+        "pair": [
+          "von",
+          "laya"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "von",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-06-opening-03-leg-2",
+        "pair": [
+          "von",
+          "laya"
+        ],
+        "opening_id": "b",
+        "opening_columns": [
+          2,
+          4,
+          5,
+          3
+        ],
+        "first_player": "laya",
+        "second_player": "von"
+      },
+      {
+        "id": "pair-06-opening-04-leg-1",
+        "pair": [
+          "von",
+          "laya"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "von",
+        "second_player": "laya"
+      },
+      {
+        "id": "pair-06-opening-04-leg-2",
+        "pair": [
+          "von",
+          "laya"
+        ],
+        "opening_id": "b-mirror",
+        "opening_columns": [
+          6,
+          4,
+          3,
+          5
+        ],
+        "first_player": "laya",
+        "second_player": "von"
+      }
+    ],
+    "planned_games": 60,
+    "games_per_pair": 10,
+    "games_per_model": 30,
+    "maximum_model_decisions_total": 2328,
+    "video_match_id": "pair-01-opening-00-leg-1",
+    "video_match_ids": [
+      "pair-01-opening-00-leg-1",
+      "pair-06-opening-00-leg-1"
+    ],
+    "video_selection": "First scheduled match for each adjacent pair in model order, fixed before results; covers all four models in a four-model tournament",
+    "harness_sources_sha256": {
+      "engine.py": "fa096ccf69a7c463efd535884c7d60bbf070828ccc2b14fa39bd5cfe164d1a71",
+      "tournament.py": "8e53c70be10bd4e77ae2dd91944ac2941d43cea21d7214b792108cb4a92b0e6e"
+    },
+    "board": "42 row-major integers, top row first;0 empty,1 X,2 O; columns1..7",
+    "rules": "6x7 board, gravity, X first, connect4 horizontal/vertical/diagonal; full board without winner is a draw; no moves after a win",
+    "fairness": "Every pair receives each fixed opening in both color assignments. Openings have equal piece counts; no solver-balanced value claim.",
+    "request_schema": "state + questions.move(type=choice,instructions,criteria map c1..c7); only legal columns; plain board/rules; no solver features, history or opponent identity",
+    "choice_order": "Legal columns ascending left to right for every model",
+    "mandatory_moves": "When exactly one legal column remains, every entrant automatically plays it without a model call; logged source=forced_by_rules and model_calls=0. This is legality only, not strategic lookahead.",
+    "response_schema": "JSON object with choice:c1..c7 (equivalent numeric strings accepted), optional metadata; no fallback action",
+    "ranking": {
+      "primary": "wins descending",
+      "secondary": "points descending",
+      "win_points": 3,
+      "draw_points": 1,
+      "loss_points": 0,
+      "ties": "Exact equal wins and points share competition rank; model ID is only a stable display order"
+    },
+    "invalid_choice": "A model response naming an illegal/missing choice forfeits that game; logged separately from board wins",
+    "service_failure": "Timeout, budget block, unavailable adapter or malformed transport pauses the game without a loss; unaffected pairs may continue",
+    "resume": "Saved moves and completed responses are reused; pending requests without responses may require caller-managed retry/idempotency",
+    "publish_guard": "Final ranks only when every scheduled game is complete; partial results explicitly incomplete",
+    "billing": "No purchases; provider adapter must enforce its authorized cap before calls; optional before_decision guard pauses cleanly",
+    "randomness": "Engine and schedule deterministic; model sampling settings/version must be pinned in model descriptors"
+  }
+}

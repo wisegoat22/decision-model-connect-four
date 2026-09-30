@@ -1,0 +1,3872 @@
+{
+  "scope": "Only the 60 saved local Connect Four games; no external benchmark scores.",
+  "analysis": "Post hoc descriptive analysis; tactical metrics were not prespecified tournament ranking criteria.",
+  "source_results_sha256": "1e34251b6cfc7bc9a3df766efb17450c2d5ec68bea7456949da6ebb3fc3d26b2",
+  "models": {
+    "dev": {
+      "counts": {
+        "wins": 26,
+        "legal_decisions": 105,
+        "no_current_threat_turns_with_safe_move": 68,
+        "created_avoidable_immediate_threat": 0,
+        "immediate_win_opportunities": 27,
+        "immediate_wins_taken": 26,
+        "losses": 4,
+        "blockable_threat_turns": 10,
+        "safe_blocks_played": 0
+      },
+      "wins_percent": 86.67,
+      "seats": {
+        "first": {
+          "wins": 14,
+          "losses": 1
+        },
+        "second": {
+          "losses": 3,
+          "wins": 12
+        }
+      },
+      "harness_response_ms": {
+        "n": 105,
+        "mean": 494.264,
+        "median": 131.575,
+        "p95_nearest_rank": 141.072,
+        "min": 129.232,
+        "max": 20653.889
+      },
+      "adapter_native_timer_ms": {
+        "n": 105,
+        "mean": 132.178,
+        "median": 131.101,
+        "p95_nearest_rank": 137.799,
+        "min": 128.814,
+        "max": 146.581
+      },
+      "unique_request_hashes": 63,
+      "request_hashes_with_different_choices": 0,
+      "chosen_columns": {
+        "1": 1,
+        "4": 104
+      }
+    },
+    "von": {
+      "counts": {
+        "losses": 13,
+        "legal_decisions": 164,
+        "no_current_threat_turns_with_safe_move": 104,
+        "created_avoidable_immediate_threat": 0,
+        "blockable_threat_turns": 18,
+        "safe_blocks_played": 3,
+        "wins": 17,
+        "immediate_win_opportunities": 39,
+        "immediate_wins_taken": 17,
+        "unavoidable_immediate_loss_turns": 3
+      },
+      "wins_percent": 56.67,
+      "seats": {
+        "first": {
+          "wins": 7,
+          "losses": 8
+        },
+        "second": {
+          "losses": 5,
+          "wins": 10
+        }
+      },
+      "harness_response_ms": {
+        "n": 164,
+        "mean": 134.027,
+        "median": 102.392,
+        "p95_nearest_rank": 109.252,
+        "min": 88.186,
+        "max": 4765.58
+      },
+      "adapter_native_timer_ms": {
+        "n": 164,
+        "mean": 106.166,
+        "median": 102.249,
+        "p95_nearest_rank": 109.104,
+        "min": 88.048,
+        "max": 359.547
+      },
+      "unique_request_hashes": 129,
+      "request_hashes_with_different_choices": 0,
+      "chosen_columns": {
+        "1": 68,
+        "2": 16,
+        "3": 71,
+        "4": 6,
+        "5": 3
+      }
+    },
+    "laya": {
+      "counts": {
+        "losses": 21,
+        "legal_decisions": 165,
+        "no_current_threat_turns_with_safe_move": 105,
+        "created_avoidable_immediate_threat": 1,
+        "blockable_threat_turns": 34,
+        "safe_blocks_played": 4,
+        "wins": 9,
+        "immediate_win_opportunities": 24,
+        "immediate_wins_taken": 9,
+        "unavoidable_immediate_loss_turns": 2
+      },
+      "wins_percent": 30.0,
+      "seats": {
+        "first": {
+          "wins": 5,
+          "losses": 10
+        },
+        "second": {
+          "losses": 11,
+          "wins": 4
+        }
+      },
+      "harness_response_ms": {
+        "n": 165,
+        "mean": 127.406,
+        "median": 124.268,
+        "p95_nearest_rank": 129.56,
+        "min": 106.501,
+        "max": 381.542
+      },
+      "adapter_native_timer_ms": {
+        "n": 165,
+        "mean": 127.25,
+        "median": 124.113,
+        "p95_nearest_rank": 129.409,
+        "min": 106.375,
+        "max": 380.777
+      },
+      "unique_request_hashes": 150,
+      "request_hashes_with_different_choices": 0,
+      "chosen_columns": {
+        "1": 102,
+        "2": 38,
+        "3": 14,
+        "4": 5,
+        "5": 2,
+        "7": 4
+      }
+    },
+    "kev": {
+      "counts": {
+        "losses": 22,
+        "legal_decisions": 147,
+        "no_current_threat_turns_with_safe_move": 92,
+        "created_avoidable_immediate_threat": 1,
+        "blockable_threat_turns": 30,
+        "safe_blocks_played": 0,
+        "wins": 8,
+        "immediate_win_opportunities": 22,
+        "immediate_wins_taken": 8,
+        "unavoidable_immediate_loss_turns": 3
+      },
+      "wins_percent": 26.67,
+      "seats": {
+        "first": {
+          "wins": 3,
+          "losses": 12
+        },
+        "second": {
+          "losses": 10,
+          "wins": 5
+        }
+      },
+      "harness_response_ms": {
+        "n": 147,
+        "mean": 79.919,
+        "median": 75.343,
+        "p95_nearest_rank": 78.111,
+        "min": 71.413,
+        "max": 754.325
+      },
+      "adapter_native_timer_ms": {
+        "n": 147,
+        "mean": 79.352,
+        "median": 74.771,
+        "p95_nearest_rank": 77.607,
+        "min": 70.89,
+        "max": 748.557
+      },
+      "unique_request_hashes": 132,
+      "request_hashes_with_different_choices": 0,
+      "chosen_columns": {
+        "1": 66,
+        "2": 17,
+        "3": 14,
+        "4": 2,
+        "5": 3,
+        "6": 15,
+        "7": 30
+      }
+    }
+  },
+  "pairwise": [
+    {
+      "models": [
+        "dev",
+        "kev"
+      ],
+      "wins": {
+        "dev": 8,
+        "kev": 2
+      }
+    },
+    {
+      "models": [
+        "dev",
+        "von"
+      ],
+      "wins": {
+        "dev": 9,
+        "von": 1
+      }
+    },
+    {
+      "models": [
+        "dev",
+        "laya"
+      ],
+      "wins": {
+        "dev": 9,
+        "laya": 1
+      }
+    },
+    {
+      "models": [
+        "kev",
+        "von"
+      ],
+      "wins": {
+        "von": 7,
+        "kev": 3
+      }
+    },
+    {
+      "models": [
+        "kev",
+        "laya"
+      ],
+      "wins": {
+        "laya": 7,
+        "kev": 3
+      }
+    },
+    {
+      "models": [
+        "laya",
+        "von"
+      ],
+      "wins": {
+        "laya": 1,
+        "von": 9
+      }
+    }
+  ],
+  "by_opening": {
+    "empty": {
+      "dev_wins": 3,
+      "kev_losses": 4,
+      "kev_wins": 2,
+      "dev_losses": 3,
+      "von_losses": 3,
+      "von_wins": 3,
+      "laya_losses": 2,
+      "laya_wins": 4
+    },
+    "a": {
+      "dev_losses": 1,
+      "kev_wins": 2,
+      "kev_losses": 4,
+      "dev_wins": 5,
+      "von_losses": 2,
+      "laya_losses": 5,
+      "von_wins": 4,
+      "laya_wins": 1
+    },
+    "a-mirror": {
+      "dev_wins": 6,
+      "kev_losses": 5,
+      "von_losses": 2,
+      "laya_losses": 5,
+      "von_wins": 4,
+      "kev_wins": 1,
+      "laya_wins": 1
+    },
+    "b": {
+      "dev_wins": 6,
+      "kev_losses": 5,
+      "von_losses": 3,
+      "laya_losses": 4,
+      "von_wins": 3,
+      "kev_wins": 1,
+      "laya_wins": 2
+    },
+    "b-mirror": {
+      "dev_wins": 6,
+      "kev_losses": 4,
+      "von_losses": 3,
+      "laya_losses": 5,
+      "von_wins": 3,
+      "kev_wins": 2,
+      "laya_wins": 1
+    }
+  },
+  "game_total_plies": {
+    "n": 60,
+    "mean": 12.883,
+    "median": 11.0,
+    "p95_nearest_rank": 21,
+    "min": 7,
+    "max": 31
+  },
+  "game_model_decisions": {
+    "n": 60,
+    "mean": 9.683,
+    "median": 7.0,
+    "p95_nearest_rank": 19,
+    "min": 6,
+    "max": 27
+  },
+  "all_recorded_plies": 773,
+  "preset_opening_plies": 192,
+  "tactical_events": [
+    {
+      "match_id": "pair-01-opening-00-leg-1",
+      "ply": 6,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-00-leg-1",
+      "ply": 7,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-01-opening-00-leg-2",
+      "ply": 6,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-00-leg-2",
+      "ply": 7,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        1
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-01-opening-01-leg-1",
+      "ply": 9,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-01-leg-1",
+      "ply": 10,
+      "model": "kev",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        3,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-01-opening-01-leg-2",
+      "ply": 9,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-01-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-01-opening-02-leg-1",
+      "ply": 10,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-02-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-01-opening-02-leg-2",
+      "ply": 6,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-02-leg-2",
+      "ply": 7,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-02-leg-2",
+      "ply": 8,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-02-leg-2",
+      "ply": 9,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        2,
+        4
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-02-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1,
+        2
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-01-opening-03-leg-1",
+      "ply": 10,
+      "model": "kev",
+      "chosen_column": 6,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-03-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        6
+      ],
+      "safe_columns": [
+        4,
+        6
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-01-opening-03-leg-2",
+      "ply": 9,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-03-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-01-opening-04-leg-1",
+      "ply": 10,
+      "model": "kev",
+      "chosen_column": 6,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-04-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        6
+      ],
+      "safe_columns": [
+        4,
+        6
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-01-opening-04-leg-2",
+      "ply": 9,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-01-opening-04-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-02-opening-00-leg-1",
+      "ply": 6,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-00-leg-1",
+      "ply": 7,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-02-opening-00-leg-2",
+      "ply": 6,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-00-leg-2",
+      "ply": 7,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        1
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-02-opening-01-leg-1",
+      "ply": 10,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-01-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-02-opening-01-leg-2",
+      "ply": 9,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-01-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-02-opening-02-leg-1",
+      "ply": 10,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-02-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-02-opening-02-leg-2",
+      "ply": 8,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-02-leg-2",
+      "ply": 9,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        2,
+        4
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-02-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2,
+        4
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-02-leg-2",
+      "ply": 11,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        2,
+        4
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-02-leg-2",
+      "ply": 12,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-02-opening-03-leg-1",
+      "ply": 10,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-03-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-02-opening-03-leg-2",
+      "ply": 9,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-03-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-02-opening-04-leg-1",
+      "ply": 10,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-04-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-02-opening-04-leg-2",
+      "ply": 8,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-04-leg-2",
+      "ply": 9,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        3,
+        4
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-02-opening-04-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-03-opening-00-leg-1",
+      "ply": 6,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-00-leg-1",
+      "ply": 7,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-03-opening-00-leg-2",
+      "ply": 6,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-00-leg-2",
+      "ply": 7,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        1
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-03-opening-01-leg-1",
+      "ply": 10,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-01-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-03-opening-01-leg-2",
+      "ply": 9,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-01-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-03-opening-02-leg-1",
+      "ply": 10,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-02-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-03-opening-02-leg-2",
+      "ply": 6,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-02-leg-2",
+      "ply": 7,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-02-leg-2",
+      "ply": 8,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-02-leg-2",
+      "ply": 9,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        2,
+        4
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-02-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1,
+        2
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-03-opening-03-leg-1",
+      "ply": 10,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-03-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-03-opening-03-leg-2",
+      "ply": 9,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-03-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-03-opening-04-leg-1",
+      "ply": 10,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-04-leg-1",
+      "ply": 11,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-03-opening-04-leg-2",
+      "ply": 9,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-03-opening-04-leg-2",
+      "ply": 10,
+      "model": "dev",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-00-leg-1",
+      "ply": 11,
+      "model": "kev",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-00-leg-1",
+      "ply": 12,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-00-leg-2",
+      "ply": 12,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-00-leg-2",
+      "ply": 13,
+      "model": "von",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        7
+      ],
+      "safe_columns": [
+        3,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-00-leg-2",
+      "ply": 14,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [
+        7
+      ],
+      "opponent_threat_columns_before": [
+        3,
+        4
+      ],
+      "safe_columns": [
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-01-leg-1",
+      "ply": 9,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-01-leg-1",
+      "ply": 10,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        3
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-01-leg-1",
+      "ply": 11,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-01-leg-1",
+      "ply": 12,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-01-leg-2",
+      "ply": 18,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-01-leg-2",
+      "ply": 19,
+      "model": "von",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [
+        7
+      ],
+      "safe_columns": [
+        2,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-1",
+      "ply": 6,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-1",
+      "ply": 7,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-1",
+      "ply": 8,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-1",
+      "ply": 9,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-1",
+      "ply": 11,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-1",
+      "ply": 12,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-1",
+      "ply": 13,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        2,
+        3
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-1",
+      "ply": 14,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2,
+        3
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-2",
+      "ply": 8,
+      "model": "kev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-2",
+      "ply": 9,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-2",
+      "ply": 10,
+      "model": "kev",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-2",
+      "ply": 11,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        2,
+        4
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-2",
+      "ply": 12,
+      "model": "kev",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        1,
+        2
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-02-leg-2",
+      "ply": 13,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        1,
+        2
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        1,
+        2,
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-03-leg-1",
+      "ply": 9,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-03-leg-1",
+      "ply": 10,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        3
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-03-leg-1",
+      "ply": 11,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-03-leg-1",
+      "ply": 12,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-03-leg-2",
+      "ply": 13,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        6
+      ],
+      "safe_columns": [
+        6
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-03-leg-2",
+      "ply": 14,
+      "model": "kev",
+      "chosen_column": 6,
+      "own_winning_columns": [
+        6
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-1",
+      "ply": 10,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1
+      ],
+      "category": "blockable_threat",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-1",
+      "ply": 16,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-1",
+      "ply": 17,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-1",
+      "ply": 18,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-1",
+      "ply": 19,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-1",
+      "ply": 20,
+      "model": "von",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-2",
+      "ply": 8,
+      "model": "kev",
+      "chosen_column": 6,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-2",
+      "ply": 9,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-2",
+      "ply": 10,
+      "model": "kev",
+      "chosen_column": 6,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-2",
+      "ply": 11,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        6
+      ],
+      "safe_columns": [
+        3,
+        6
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-2",
+      "ply": 12,
+      "model": "kev",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        6
+      ],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3,
+        6
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-2",
+      "ply": 13,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        6
+      ],
+      "safe_columns": [
+        6
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-04-opening-04-leg-2",
+      "ply": 14,
+      "model": "kev",
+      "chosen_column": 6,
+      "own_winning_columns": [
+        6
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        6
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-05-opening-00-leg-1",
+      "ply": 20,
+      "model": "laya",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        7
+      ],
+      "safe_columns": [
+        7
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-00-leg-1",
+      "ply": 21,
+      "model": "kev",
+      "chosen_column": 5,
+      "own_winning_columns": [
+        7
+      ],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-00-leg-1",
+      "ply": 22,
+      "model": "laya",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        7
+      ],
+      "safe_columns": [
+        3,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-05-opening-00-leg-2",
+      "ply": 14,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-00-leg-2",
+      "ply": 15,
+      "model": "laya",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-00-leg-2",
+      "ply": 16,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-00-leg-2",
+      "ply": 17,
+      "model": "laya",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-00-leg-2",
+      "ply": 19,
+      "model": "laya",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3,
+        4
+      ],
+      "opponent_threat_columns_before": [
+        7
+      ],
+      "safe_columns": [
+        3,
+        4,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-05-opening-01-leg-1",
+      "ply": 12,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        6
+      ],
+      "safe_columns": [
+        6
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-01-leg-1",
+      "ply": 13,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [
+        6
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-01-leg-1",
+      "ply": 14,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        6
+      ],
+      "safe_columns": [
+        6
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-01-leg-1",
+      "ply": 15,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [
+        6
+      ],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3,
+        6
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-01-leg-1",
+      "ply": 16,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        6,
+        7
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-01-leg-1",
+      "ply": 17,
+      "model": "kev",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        6,
+        7
+      ],
+      "opponent_threat_columns_before": [
+        2,
+        3
+      ],
+      "safe_columns": [
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-01-leg-1",
+      "ply": 18,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        6,
+        7
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-01-leg-1",
+      "ply": 19,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [
+        6,
+        7
+      ],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-05-opening-01-leg-2",
+      "ply": 10,
+      "model": "kev",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-01-leg-2",
+      "ply": 11,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        1
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-1",
+      "ply": 6,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-1",
+      "ply": 7,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-1",
+      "ply": 8,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-1",
+      "ply": 9,
+      "model": "kev",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-1",
+      "ply": 10,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-1",
+      "ply": 11,
+      "model": "kev",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-2",
+      "ply": 6,
+      "model": "kev",
+      "chosen_column": 5,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-2",
+      "ply": 7,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-2",
+      "ply": 8,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-2",
+      "ply": 9,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-02-leg-2",
+      "ply": 11,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        1,
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-05-opening-03-leg-1",
+      "ply": 13,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-03-leg-1",
+      "ply": 14,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-03-leg-1",
+      "ply": 15,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-03-leg-1",
+      "ply": 16,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-03-leg-1",
+      "ply": 18,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        2,
+        3
+      ],
+      "opponent_threat_columns_before": [
+        7
+      ],
+      "safe_columns": [
+        2,
+        3,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-05-opening-03-leg-2",
+      "ply": 10,
+      "model": "kev",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-03-leg-2",
+      "ply": 11,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        1
+      ],
+      "opponent_threat_columns_before": [
+        7
+      ],
+      "safe_columns": [
+        1,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-05-opening-04-leg-1",
+      "ply": 15,
+      "model": "kev",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-04-leg-1",
+      "ply": 16,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-04-leg-1",
+      "ply": 17,
+      "model": "kev",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-04-leg-1",
+      "ply": 18,
+      "model": "laya",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-05-opening-04-leg-2",
+      "ply": 15,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-05-opening-04-leg-2",
+      "ply": 16,
+      "model": "kev",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-00-leg-1",
+      "ply": 16,
+      "model": "laya",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-00-leg-1",
+      "ply": 20,
+      "model": "laya",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-00-leg-1",
+      "ply": 21,
+      "model": "von",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-00-leg-1",
+      "ply": 22,
+      "model": "laya",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-00-leg-1",
+      "ply": 24,
+      "model": "laya",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-00-leg-2",
+      "ply": 11,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-00-leg-2",
+      "ply": 12,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-1",
+      "ply": 16,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-1",
+      "ply": 17,
+      "model": "von",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-1",
+      "ply": 18,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-1",
+      "ply": 19,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-1",
+      "ply": 21,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-1",
+      "ply": 22,
+      "model": "laya",
+      "chosen_column": 4,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-1",
+      "ply": 31,
+      "model": "von",
+      "chosen_column": 5,
+      "own_winning_columns": [
+        5
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-2",
+      "ply": 9,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-2",
+      "ply": 10,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        3
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-2",
+      "ply": 11,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-01-leg-2",
+      "ply": 12,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-02-leg-1",
+      "ply": 14,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-02-leg-1",
+      "ply": 15,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        2,
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-02-leg-2",
+      "ply": 6,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-02-leg-2",
+      "ply": 7,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-02-leg-2",
+      "ply": 8,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-02-leg-2",
+      "ply": 9,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-02-leg-2",
+      "ply": 11,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-02-leg-2",
+      "ply": 12,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-02-leg-2",
+      "ply": 13,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        2
+      ],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        2,
+        3
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-02-leg-2",
+      "ply": 14,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        2
+      ],
+      "safe_columns": [
+        2,
+        3
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-03-leg-1",
+      "ply": 16,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-03-leg-1",
+      "ply": 17,
+      "model": "von",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-03-leg-1",
+      "ply": 18,
+      "model": "laya",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-03-leg-1",
+      "ply": 19,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-03-leg-1",
+      "ply": 20,
+      "model": "laya",
+      "chosen_column": 3,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-03-leg-1",
+      "ply": 21,
+      "model": "von",
+      "chosen_column": 4,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-03-leg-2",
+      "ply": 9,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-03-leg-2",
+      "ply": 10,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1,
+        3
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-03-leg-2",
+      "ply": 11,
+      "model": "laya",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-03-leg-2",
+      "ply": 12,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-04-leg-1",
+      "ply": 14,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-04-leg-1",
+      "ply": 15,
+      "model": "von",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-04-leg-1",
+      "ply": 16,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-04-leg-1",
+      "ply": 17,
+      "model": "von",
+      "chosen_column": 2,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-04-leg-1",
+      "ply": 18,
+      "model": "laya",
+      "chosen_column": 7,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        4
+      ],
+      "safe_columns": [
+        4
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-04-leg-1",
+      "ply": 19,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-04-leg-1",
+      "ply": 21,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        3,
+        4
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-04-leg-2",
+      "ply": 10,
+      "model": "von",
+      "chosen_column": 1,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        1
+      ],
+      "safe_columns": [
+        1
+      ],
+      "category": "blockable_threat",
+      "success": true
+    },
+    {
+      "match_id": "pair-06-opening-04-leg-2",
+      "ply": 15,
+      "model": "laya",
+      "chosen_column": 2,
+      "own_winning_columns": [],
+      "opponent_threat_columns_before": [
+        3
+      ],
+      "safe_columns": [
+        3
+      ],
+      "category": "blockable_threat",
+      "success": false
+    },
+    {
+      "match_id": "pair-06-opening-04-leg-2",
+      "ply": 16,
+      "model": "von",
+      "chosen_column": 3,
+      "own_winning_columns": [
+        2,
+        3
+      ],
+      "opponent_threat_columns_before": [],
+      "safe_columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "category": "immediate_win",
+      "success": true
+    }
+  ],
+  "tactical_definitions": {
+    "immediate_win": "A gravity-legal placement completing four of the moving player; success chooses any such column.",
+    "blockable_threat": "No immediate own win, at least one opponent immediate winning column before the move, and at least one legal own move leaving zero opponent immediate wins; success chooses such a move.",
+    "created_avoidable_immediate_threat": "Neither player has an immediate win before the move, a safe own move exists, but chosen move leaves an opponent immediate win.",
+    "unit": "A model decision occurrence; repeated positions count repeatedly and exposure differs across models."
+  },
+  "timing_limitations": [
+    "Harness times use the same request/response boundary for all models, including IPC, validation and any startup/loading wait.",
+    "Models use different backends; games have different positions, were run in stages, and no controlled latency benchmark was prespecified.",
+    "Native timers have different boundaries: Kev excludes encoding, Dev includes answer encoding, Von includes evaluation, Laya includes extra truncation checks.",
+    "Do not compare native timer values as like-for-like model speed or confuse either timing with video pacing."
+  ],
+  "uncertainty": "Fixed openings and deterministic choices produce repeated states; no confidence intervals or global ranking claims are justified by these counts alone."
+}

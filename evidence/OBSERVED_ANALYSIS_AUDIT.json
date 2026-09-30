@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Post-hoc descriptive statistics computed from recorded games only",
+  "independent_cross_checks": 640,
+  "mismatches": 0,
+  "source_results_sha256": "1e34251b6cfc7bc9a3df766efb17450c2d5ec68bea7456949da6ebb3fc3d26b2",
+  "statistics_sha256": "1709742fad306068e882ab85455a072dc62014d67608b764181a8aa658d99154",
+  "independent_analysis_sha256": "8c305b24789b7f59630b3da162598dc6aa0b7d71492a32c20a91f7c1d377c6ec",
+  "reviewed_documents": [
+    "RESULTS_AND_METHODS.md",
+    "LINKEDIN_POST.txt"
+  ],
+  "findings": [
+    "Independent raw-board calculations agree on outcomes, seat balance, opening subsets, move choices and tactical events.",
+    "Repeated-state exposure and timing boundary limits disclosed.",
+    "No external benchmark scores used to infer observed performance."
+  ]
+}

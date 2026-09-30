@@ -1,0 +1,14 @@
+Connect Four decision-model experiment
+Copyright 2026 Tarun Dagar
+
+This repository contains the experiment harness, adapters, recorded outputs, analysis, and presentation assets prepared with AI assistance.
+
+Upstream model source and model weights are not bundled. The inference adapters call the public Dev, Kev, Von and Laya interfaces. The Kev adapter preserves the upstream MLX loading/adapter-merge approach with local artifact resolution; its source is jaredpalmer/kev at fdfdfd2c7a98225715a9cc8f4d9e1ef29ebbe79c (Apache-2.0). The upstream Apache license is retained in LICENSE.
+
+Model and source attribution:
+Dev-0.4B: https://huggingface.co/mpnikhil/dev-0.4b and https://github.com/mpnikhil/dev-0.4b
+Kev-4B: https://huggingface.co/jaredpalmer/kev-4b and https://github.com/jaredpalmer/kev
+Von: https://huggingface.co/wfzyx/von and https://github.com/wfzyx/von
+Laya English: https://huggingface.co/convaiinnovations/laya and https://github.com/NandhaKishorM/laya
+
+These credits identify the software tested; no affiliation, endorsement, or external benchmark result is implied. Upstream models and dependencies retain their own licenses.

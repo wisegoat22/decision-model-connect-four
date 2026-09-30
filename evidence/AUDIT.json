@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "protocol_hash": "6db078738bd32e9dbb3ddca68a3017bc8784b4874661dc7006812e4539f57921",
+  "completed_games": 60,
+  "model_calls": {
+    "dev": 105,
+    "kev": 147,
+    "von": 164,
+    "laya": 165
+  },
+  "forced_moves": {},
+  "infrastructure_attempt_errors": 0,
+  "board_wins": 60,
+  "forfeit_games": 0,
+  "drawn_games": 0,
+  "input_token_ranges": {
+    "dev": [
+      210,
+      222
+    ],
+    "kev": [
+      162,
+      198
+    ],
+    "von": [
+      126,
+      162
+    ],
+    "laya": [
+      138,
+      181
+    ]
+  },
+  "checks": [
+    "Frozen source/protocol hashes",
+    "All 60 saved game records and exact request/response replay",
+    "All model weight revisions",
+    "Finite normalized probabilities and selected maximum",
+    "No truncated model requests",
+    "Independent board winner/post-terminal/draw validation",
+    "Equal 15/15 player assignments and 30 games per model",
+    "Exact leaderboard and shared ranks",
+    "Two replay games selected before outcomes, covering all four models"
+  ]
+}

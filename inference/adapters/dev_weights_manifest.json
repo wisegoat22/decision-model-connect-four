@@ -1,0 +1,36 @@
+{
+  "repo": "mpnikhil/dev-0.4b",
+  "revision": "78f7121608a2ca44dc598bba4d74e4070567fd50",
+  "artifacts": [
+    {
+      "file": "encoder/config.json",
+      "bytes": 1237,
+      "sha256": "bbd6ecc04bdcaaba1b7286f709ad474cfc177914ed860bf2ee11d6b1e8c75f22"
+    },
+    {
+      "file": "model.safetensors",
+      "bytes": 1587542148,
+      "sha256": "c876fa0d2921ba31158f17be7adfc67b8a8aff1bb017c30bd4265222455d1f35"
+    },
+    {
+      "file": "run.json",
+      "bytes": 2200,
+      "sha256": "387b00a8b4133648b53c324ccb772d9b2b4b847844d30431ab4788a8d02de243"
+    },
+    {
+      "file": "tokenizer/special_tokens_map.json",
+      "bytes": 694,
+      "sha256": "ea97ecdbcc73713039d8d64dbb05e3689495c96657fbd9a18f5bed381be81049"
+    },
+    {
+      "file": "tokenizer/tokenizer.json",
+      "bytes": 3583228,
+      "sha256": "6c8aaa9a542084f2457eab775d4eeb51f92a70c0fd9de28d5edb0ddec3c08d30"
+    },
+    {
+      "file": "tokenizer/tokenizer_config.json",
+      "bytes": 20840,
+      "sha256": "2966a59b9e9cf122279aec1249e22e5bc7ad8430c754e95031b13fd128d4e560"
+    }
+  ]
+}
