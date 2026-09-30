@@ -83,9 +83,13 @@ These are the elapsed times around the same harness request/response boundary, c
 
 The native timer inside each adapter covers a different scope. Kev excludes input encoding; Dev includes its answer call; Von includes evaluation; Laya includes additional truncation checks. Those native timers are retained in the evidence but are not presented as comparable inference speeds.
 
-## Gameplay video
+## Gameplay highlights
 
-The 27-second silent video shows two recorded games selected before outcomes, at the same one-second interval per move. Dev beats Kev in the first. Laya beats Von in the second, although Von won nine of their ten games overall. Replay timing is for readability, not inference speed.
+Three single-board replays were selected after reviewing all outcomes for successful defensive blocks and game length. The featured game is Von–Laya from an empty board: 24 moves, four successful safe blocks at moves 16, 20, 21 and 22, and a Laya win. The main action excerpt starts from the recorded board after move 14 and shows moves 15–24 consecutively; the complete replay is also included. Von nevertheless won nine of their ten games overall.
+
+The other highlights are the longest recorded game (Von–Laya, 31 placements including four preset opening pieces, one safe block, Von wins) and a Kev–Von game (20 placements including four preset opening pieces, one safe block, Von wins). Their labels come directly from the post-hoc tactical checks, not generated commentary about model intent.
+
+All play at one second per model move. Preset opening pieces are labeled; they are not presented as model choices. The clips are selected examples, not a representative sample or model-speed comparison. All 60 games remain unchanged in the complete results. The original two-board edit is retained separately.
 
 ## What remains untested
 

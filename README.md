@@ -19,11 +19,19 @@ Six pairings × five fixed starting positions × both player assignments = **60 
 
 [Read the complete observed results and limitations](docs/RESULTS.md), including pairwise scores, opening sensitivity, immediate tactical checks and carefully labeled local response-time observations.
 
-## Watch the games
+## Watch selected highlights
 
-[Download or view the 27-second silent gameplay video](media/gameplay.mp4).
+**[Start with the action excerpt: Von vs Laya, moves 15–24](media/highlights/00_Von_vs_Laya_Block_Exchange.mp4).** It begins from the actual board after move 14 and shows every remaining move, including four successful blocks and the finish. The full game is linked below.
 
-Both boards advance at one move per second; this is presentation timing, not model speed. These two matches were selected before outcomes. Laya wins the shown game against Von, although Von won nine of their ten matches overall.
+These three replays were selected **after reviewing the outcomes** for visible defensive blocks and game length. They are illustrative highlights, not a representative sample. All 60 games, including straightforward non-blocking games, remain in the results.
+
+1. [Von vs Laya: four successful blocks](media/highlights/01_Von_vs_Laya_Blocks.mp4). The full replay starts from an empty board and lasts 24 moves. Laya wins, although Von won nine of their ten games overall.
+2. [Von vs Laya: the longest recorded game](media/highlights/02_Von_vs_Laya_Longest.mp4). 31 placements including four preset opening pieces; Von wins. One successful defensive block.
+3. [Kev vs Von: a defensive block in column 1](media/highlights/03_Kev_vs_Von_Block.mp4). 20 placements including four preset opening pieces; Von wins.
+
+One large board per video, verified block labels, no audio, and one second per model move. Preset pieces are labeled as starting positions. Playback pace does not compare model speed. [Selection and media checks](media/highlights/QA.json).
+
+The [original two-board replay](media/gameplay.mp4) is retained for reference. Its two matches were selected before outcomes; the new highlight set was selected afterward.
 
 ## Replay and reproduce the analysis
 

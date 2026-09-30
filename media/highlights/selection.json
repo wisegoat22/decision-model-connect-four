@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "selection": "Curated after results for recorded defensive blocks and longer games; not representative performance evidence.",
+  "results_sha256": "1e34251b6cfc7bc9a3df766efb17450c2d5ec68bea7456949da6ebb3fc3d26b2",
+  "clips": [
+    {
+      "filename": "00_Von_vs_Laya_Block_Exchange.mp4",
+      "match_id": "pair-06-opening-00-leg-1",
+      "source_match_sha256": "eda77bdf937de87a5a60fadfd015bcbef5afe5d20eed7ec01f86f73a448939ce",
+      "start_ply": 14,
+      "blocks": [
+        {
+          "ply": 16,
+          "model": "laya",
+          "column": 3
+        },
+        {
+          "ply": 20,
+          "model": "laya",
+          "column": 4
+        },
+        {
+          "ply": 21,
+          "model": "von",
+          "column": 4
+        },
+        {
+          "ply": 22,
+          "model": "laya",
+          "column": 4
+        }
+      ]
+    },
+    {
+      "filename": "01_Von_vs_Laya_Blocks.mp4",
+      "match_id": "pair-06-opening-00-leg-1",
+      "source_match_sha256": "eda77bdf937de87a5a60fadfd015bcbef5afe5d20eed7ec01f86f73a448939ce",
+      "start_ply": 0,
+      "blocks": [
+        {
+          "ply": 16,
+          "model": "laya",
+          "column": 3
+        },
+        {
+          "ply": 20,
+          "model": "laya",
+          "column": 4
+        },
+        {
+          "ply": 21,
+          "model": "von",
+          "column": 4
+        },
+        {
+          "ply": 22,
+          "model": "laya",
+          "column": 4
+        }
+      ]
+    },
+    {
+      "filename": "02_Von_vs_Laya_Longest.mp4",
+      "match_id": "pair-06-opening-01-leg-1",
+      "source_match_sha256": "7f5e82df671b4ed2da9e97143569d9f588734857e3415e7bd3569b1e909583a2",
+      "start_ply": 4,
+      "blocks": [
+        {
+          "ply": 22,
+          "model": "laya",
+          "column": 4
+        }
+      ]
+    },
+    {
+      "filename": "03_Kev_vs_Von_Block.mp4",
+      "match_id": "pair-04-opening-04-leg-1",
+      "source_match_sha256": "160313fe03c6ba164624929e796275f695834c7f4f53ae76e9cabad74c742364",
+      "start_ply": 4,
+      "blocks": [
+        {
+          "ply": 10,
+          "model": "von",
+          "column": 1
+        }
+      ]
+    }
+  ]
+}
